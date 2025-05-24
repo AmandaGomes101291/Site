@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inteligência Artificial Hoje</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e0f7fa);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    main {
+      padding: 30px 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h1, h2 {
+      color: #0053a0;
+    }
+    button {
+      background-color: #ff6f00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #e65100;
+    }
+    .box {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    footer {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Inteligência Artificial Hoje</h1>
+    <p>Descubra como a IA está transformando o mundo!</p>
+  </header>
+
+  <main>
+    <section class="box">
+      <h2>🧠 O que é Inteligência Artificial?</h2>
+      <p>A Inteligência Artificial (IA) é um campo da ciência da computação que foca na criação de sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana, como reconhecimento de fala, tomada de decisão, resolução de problemas e aprendizado automático.</p>
+    </section>
+
+    <section class="box">
+      <h2>📜 Breve História da IA</h2>
+      <p>A ideia de máquinas pensantes surgiu ainda na Antiguidade, mas a IA moderna começou nos anos 1950 com Alan Turing e seu famoso "Teste de Turing". Desde então, a IA evoluiu com o aprendizado de máquina, redes neurais e, recentemente, com modelos como o ChatGPT e sistemas autônomos.</p>
+    </section>
+
+    <section class="box">
+      <h2>🌐 Aplicações Reais de IA</h2>
+      <ul>
+        <li>Assistentes virtuais como Alexa, Siri e Google Assistant</li>
+        <li>Carros autônomos que dirigem sozinhos</li>
+        <li>Detecção de fraudes em bancos</li>
+        <li>Recomendações em Netflix, YouTube e Spotify</li>
+        <li>Chatbots para atendimento ao cliente</li>
+        <li>Diagnóstico médico auxiliado por IA</li>
+      </ul>
+    </section>
+
+    <section class="box">
+      <h2>⚖️ Impactos da IA na Sociedade</h2>
+      <p>A IA traz muitos benefícios, como agilidade, precisão e automação. No entanto, também levanta questões sobre ética, privacidade, desemprego tecnológico e o uso indevido de dados. É essencial equilibrar inovação com responsabilidade.</p>
+    </section>
+
+    <section class="box">
+      <h2>💡 Curiosidades Rápidas</h2>
+      <button onclick="mostrarCuriosidade()">Mostrar Curiosidade</button>
+      <p id="curiosidade" style="margin-top: 10px; font-weight: bold;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido por <strong>Amanda Gonçalves Gomes</strong> – <a href="https://github.com/seuusuario" target="_blank">Meu GitHub</a></p>
+  </footer>
+
+  <script>
+    function mostrarCuriosidade() {
+      const curiosidades = [
+        "A IA pode criar imagens e músicas a partir de texto!",
+        "Alguns algoritmos de IA conseguem aprender a jogar sozinhos.",
+        "O ChatGPT foi treinado com bilhões de palavras.",
+        "IA está sendo usada para monitorar mudanças climáticas!",
+        "Carros autônomos usam sensores, câmeras e IA para tomar decisões em tempo real."
+      ];
+      const aleatoria = curiosidades[Math.floor(Math.random() * curiosidades.length)];
+      document.getElementById("curiosidade").innerText = aleatoria;
+    }
+  </script>
+
+</body>
+</html>
